@@ -13,3 +13,11 @@ def monkey():
     print("Goal Achieved:", state)
 
 monkey()
+
+
+OUTPUT:
+Enter monkey position: corner
+Enter box position: right
+Enter banana position: left
+Initial State: {'monkey': 'corner', 'box': 'right', 'banana': 'left'}
+Goal Achieved: {'monkey': 'left', 'box': 'left', 'banana': 'left'}
