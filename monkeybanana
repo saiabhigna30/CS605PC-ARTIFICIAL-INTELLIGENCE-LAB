@@ -1,0 +1,15 @@
+def monkey():
+    monkey = input("Enter monkey position: ")
+    box = input("Enter box position: ")
+    banana = input("Enter banana position: ")
+
+    state = {"monkey": monkey, "box": box, "banana": banana}
+
+    print("Initial State:", state)
+    state["monkey"] = state["box"]
+    state["box"] = state["banana"]
+    state["monkey"] = state["banana"]
+
+    print("Goal Achieved:", state)
+
+monkey()
